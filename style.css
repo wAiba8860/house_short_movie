@@ -1,0 +1,131 @@
+/**************************共通で使う色********************/
+
+:root {
+    --base: #eef9fd;
+    --main: #109ed1;
+    --accent: #f37004;
+    --brown: #7e5806;
+    --shadow: #492606;
+    --light-grey: #eee;
+    --white: #fff;
+}
+
+/**********************そのほかの共通項目********************/
+
+body {
+    background-color: var(--base);
+    text-align: center;
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    overflow-wrap: break-word;
+}
+
+p {
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/**************************ヘッダー***************************/
+
+.headerWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.logoImage {
+    text-align: left;
+    margin-left: 5%;
+}
+
+.logoImage img {
+    width: 15%;
+}
+
+.navUl {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/********************************ローディングアニメーション*********************************/
+
+.loading {
+    position: fixed;
+    inset: 0;
+    opacity: 1;
+    background-image: linear-gradient(var(--main), var(--base));
+    z-index: 3;
+}
+
+.loadingImageLight {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.loadingCamera {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    opacity: 0;
+}
+
+.loadingHouse {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    opacity: 0;
+    z-index: -1;
+}
+
+.loadingText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+    opacity: 0;
+}
+
+/*******************************キービジュアル***********************/
+
+#keyView {
+    width: 1200px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.keyViewBackground {
+    position: absolute;
+    z-index: 2;
+}
+
+.keyViewBackground img {
+    width: 100vw;
+}
+
+.keyViewImageWrapper {
+    display: flex;
+}
+
+.keyViewImage1 img {
+    min-width: 300px;
+}
