@@ -34,7 +34,7 @@ const keyImageEls1 = document.querySelectorAll(".keyViewImage1");
 gsap.set(keyImageEls1, { width: "1200px" });
 gsap.to(keyImageEls1, {
     duration: 20,
-    x: "-100vw",
+    x: "-80vw",
     repeat: -1,
     yoyo: true,
     ease: "power1.inOut",
