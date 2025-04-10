@@ -2,7 +2,7 @@
     "name": "learn-react",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://wAiba8860.github.io/house_short_movie/",
+    "homepage": "./",
     "dependencies": {
         "@gsap/react": "^2.1.2",
         "@react-three/fiber": "^9.1.2",
@@ -24,6 +24,7 @@
         "react-scripts": "5.0.1",
         "react-social-media-embed": "^2.5.18",
         "sass": "^1.86.0",
+        "serve": "^14.2.4",
         "styled-components": "^6.1.16",
         "styled-reset": "^4.5.2",
         "three": "^0.175.0",
