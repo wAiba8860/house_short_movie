@@ -157,7 +157,10 @@ export function CompanyAchievement() {
                     }}
                 >
                     <InstagramPopUp>
-                        <InstagramEmbed url={imageList[popUpIndex].url} />
+                        <InstagramEmbed
+                            width={320}
+                            url={imageList[popUpIndex].url}
+                        />
                     </InstagramPopUp>
                     <H3StylePoP>
                         画面をクリックして再生
@@ -191,7 +194,7 @@ function achievements(): { id: number; src: string; url: string }[] {
         {
             id: 1,
             src: `./images/achievementsImage1.png`,
-            url: "https://www.instagram.com/reel/DFHccAxPN9z/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            url: "https://www.instagram.com/reel/DFHccAxPN9z/?utm_source=ig_embed&amp;utm_campaign=loading",
         },
         {
             id: 2,
@@ -277,10 +280,10 @@ const HandleImagePopUp = styled.div`
 `;
 const InstagramPopUp = styled.div`
     position: absolute;
-    top: -7%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, 0) scale(0.85);
-    height: 100vh;
+    transform: translate(-50%, 0) scale(1);
+    height: 10%;
 `;
 const H3StylePoP = styled.h3`
     position: absolute;

@@ -173,7 +173,7 @@ export function CompanyServiceIntroduction(): React.ReactElement {
                             秒で引きつけ、 60 秒で伝える動画を制作いたします！
                         </AdvantagesPStyle>
                         <AdvantageImage
-                            style={{ width: "80px" }}
+                            style={{ width: "200px" }}
                             src="./images/thumbnail.gif"
                             alt="thumbnail"
                         />
@@ -191,7 +191,7 @@ export function CompanyServiceIntroduction(): React.ReactElement {
                             最大限に引き出す映像制作
                         </AdvantagesPStyle>
                         <AdvantageImage
-                            style={{ width: "150px" }}
+                            style={{ width: "200px" }}
                             src="./images/camera_male.gif"
                             alt="cameraMan"
                         />

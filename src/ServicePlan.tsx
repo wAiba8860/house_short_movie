@@ -52,7 +52,7 @@ export function ServicePlan() {
                     >
                         <GridTwoColumns>
                             <PlanH3Style>住宅撮影（静止画）</PlanH3Style>
-                            <ImageTag src="./images/femaleCamera.jpg" alt="" />
+                            <ImageTag src="./images/maleCamera.jpg" alt="" />
 
                             <PlanTextWrapper>
                                 <p>住宅のプロ撮影（10〜20枚）</p>
