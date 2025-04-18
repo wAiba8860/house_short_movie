@@ -303,7 +303,7 @@ const LoadingAnimateStyle2 = styled.div`
 `;
 
 export const ButtonMainStyle = styled.button`
-    margin: 4rem 0 3rem;
+    margin: 4rem 0 1rem;
     background-color: #aede06;
     color: #fff;
     font-size: 1.5rem;

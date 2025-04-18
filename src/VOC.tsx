@@ -85,102 +85,111 @@ export function Voc() {
                     <br />
                     いただいております！
                 </p>
-                <VOCWrapper>
-                    <GridFiveColumns>
-                        {Array(5)
-                            .fill(null)
-                            .map((_, index) => {
-                                return (
-                                    <img
-                                        ref={(el) => {
-                                            fiveStarRef1.current[index] = el;
-                                        }}
-                                        style={{
-                                            width: "100%",
-                                            maxWidth: "50px",
-                                        }}
-                                        key={index}
-                                        src="./images/star.gif"
-                                        alt="★5"
-                                    />
-                                );
-                            })}
-                    </GridFiveColumns>
-                    <div ref={fadeInOpacity1}>
-                        <CompanyName>大手工務店A様</CompanyName>
-                        <H3Style>短い動画でお客様の反応が増えました！</H3Style>
-                        <VOCPStyle>
-                            Youtube等の動画サービスは 利用していますが
-                            再生時間が短いものの方が
-                            再生数とコメントが増えました！
-                        </VOCPStyle>
-                    </div>
-                </VOCWrapper>
-                <VOCWrapper>
-                    <GridFiveColumns>
-                        {Array(5)
-                            .fill(null)
-                            .map((_, index) => {
-                                return (
-                                    <img
-                                        ref={(el) => {
-                                            fiveStarRef2.current[index] = el;
-                                        }}
-                                        style={{
-                                            width: "100%",
-                                            maxWidth: "50px",
-                                        }}
-                                        key={index}
-                                        src="./images/star.gif"
-                                        alt="★5"
-                                    />
-                                );
-                            })}
-                    </GridFiveColumns>
-                    <div ref={fadeInOpacity2}>
-                        <CompanyName>大手建設会社B様</CompanyName>
-                        <H3Style>住宅完成後の訴求が簡単になりました！</H3Style>
-                        <VOCPStyle>
-                            今までは自社で完成後の住宅の
-                            訴求ポイントを考えていましたが
-                            動画サービスを利用することにより
-                            その手間がなくなりました！
-                        </VOCPStyle>
-                    </div>
-                </VOCWrapper>
-                <VOCWrapper>
-                    <GridFiveColumns>
-                        {Array(5)
-                            .fill(null)
-                            .map((_, index) => {
-                                return (
-                                    <img
-                                        ref={(el) => {
-                                            fiveStarRef3.current[index] = el;
-                                        }}
-                                        style={{
-                                            width: "100%",
-                                            maxWidth: "50px",
-                                        }}
-                                        key={index}
-                                        src="./images/star.gif"
-                                        alt="★5"
-                                    />
-                                );
-                            })}
-                    </GridFiveColumns>
-                    <div ref={fadeInOpacity3}>
-                        <CompanyName>地元有名工務店C様</CompanyName>
-                        <H3Style>
-                            SNS運用の負担が減り、集客に集中できました！
-                        </H3Style>
-                        <VOCPStyle>
-                            SNS運用担当が繁忙期によって 増減していましたが
-                            運用を任せることによって人員が
-                            省けるようになりました！
-                        </VOCPStyle>
-                    </div>
-                </VOCWrapper>
+                <FlexBox>
+                    <VOCWrapper>
+                        <GridFiveColumns>
+                            {Array(5)
+                                .fill(null)
+                                .map((_, index) => {
+                                    return (
+                                        <img
+                                            ref={(el) => {
+                                                fiveStarRef1.current[index] =
+                                                    el;
+                                            }}
+                                            style={{
+                                                width: "100%",
+                                                maxWidth: "50px",
+                                            }}
+                                            key={index}
+                                            src="./images/star.gif"
+                                            alt="★5"
+                                        />
+                                    );
+                                })}
+                        </GridFiveColumns>
+                        <div ref={fadeInOpacity1}>
+                            <CompanyName>大手工務店A様</CompanyName>
+                            <H3Style>
+                                短い動画でお客様の反応が増えました！
+                            </H3Style>
+                            <VOCPStyle>
+                                Youtube等の動画サービスは 利用していますが
+                                再生時間が短いものの方が
+                                再生数とコメントが増えました！
+                            </VOCPStyle>
+                        </div>
+                    </VOCWrapper>
+                    <VOCWrapper>
+                        <GridFiveColumns>
+                            {Array(5)
+                                .fill(null)
+                                .map((_, index) => {
+                                    return (
+                                        <img
+                                            ref={(el) => {
+                                                fiveStarRef2.current[index] =
+                                                    el;
+                                            }}
+                                            style={{
+                                                width: "100%",
+                                                maxWidth: "50px",
+                                            }}
+                                            key={index}
+                                            src="./images/star.gif"
+                                            alt="★5"
+                                        />
+                                    );
+                                })}
+                        </GridFiveColumns>
+                        <div ref={fadeInOpacity2}>
+                            <CompanyName>大手建設会社B様</CompanyName>
+                            <H3Style>
+                                住宅完成後の訴求が簡単になりました！
+                            </H3Style>
+                            <VOCPStyle>
+                                今までは自社で完成後の住宅の
+                                訴求ポイントを考えていましたが
+                                動画サービスを利用することにより
+                                その手間がなくなりました！
+                            </VOCPStyle>
+                        </div>
+                    </VOCWrapper>
+                    <VOCWrapper>
+                        <GridFiveColumns>
+                            {Array(5)
+                                .fill(null)
+                                .map((_, index) => {
+                                    return (
+                                        <img
+                                            ref={(el) => {
+                                                fiveStarRef3.current[index] =
+                                                    el;
+                                            }}
+                                            style={{
+                                                width: "100%",
+                                                maxWidth: "50px",
+                                            }}
+                                            key={index}
+                                            src="./images/star.gif"
+                                            alt="★5"
+                                        />
+                                    );
+                                })}
+                        </GridFiveColumns>
+                        <div ref={fadeInOpacity3}>
+                            <CompanyName>地元有名工務店C様</CompanyName>
+                            <H3Style>
+                                SNS運用の負担が減り、集客に集中できました！
+                            </H3Style>
+                            <VOCPStyle>
+                                SNS運用担当が繁忙期によって 増減していましたが
+                                運用を任せることによって人員が
+                                省けるようになりました！
+                            </VOCPStyle>
+                        </div>
+                    </VOCWrapper>
+                </FlexBox>
             </SContainer>
         </Fragment>
     );
@@ -214,4 +223,10 @@ const VOCWrapper = styled.div`
 const VOCPStyle = styled.p`
     text-align: left;
     padding: 1rem;
+`;
+const FlexBox = styled.div`
+    @media (min-width: 960px) {
+        display: flex;
+        gap: 1rem;
+    }
 `;
